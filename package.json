@@ -1,0 +1,56 @@
+{
+  "name": "gulp-liquid-to-handlebars",
+  "description": "Convert liquid templates to handlebars templates. There are so many resources for jekyll and liquid on github, but handlebars is a better engine for javascript. ",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/gulp-liquid-to-handlebars",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/gulp-liquid-to-handlebars",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-liquid-to-handlebars/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "liquid-to-handlebars": "^1.0.0",
+    "through2": "^2.0.3"
+  },
+  "keywords": [
+    "blog",
+    "boilerplate",
+    "convert",
+    "converter",
+    "gulp",
+    "gulpplugin",
+    "handlebars",
+    "jekyll",
+    "liquid",
+    "templates",
+    "theme",
+    "to"
+  ],
+  "devDependencies": {
+    "gulp-format-md": "^0.1.11"
+  },
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}

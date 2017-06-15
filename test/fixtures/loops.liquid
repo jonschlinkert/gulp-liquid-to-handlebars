@@ -1,0 +1,16 @@
+{% for item in array %}
+  {{ item }}
+{% endfor %}
+
+{% for item in hash %}
+  {{ item[0] }}: {{ item[1] }}
+{% endfor %}
+
+{% for page in pages %}
+# Skip anything in the hidden_pages array, but keep looping over the rest of the values
+{% if hidden_pages contains page.url %}
+    {% continue %}
+{% endif %}
+# If it's not hidden, print it.
+* [page.title](page.url)
+{% endfor %}

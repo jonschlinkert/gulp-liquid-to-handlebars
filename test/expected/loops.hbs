@@ -1,0 +1,16 @@
+{{#each array as |item|}}
+  {{ item }}
+{{/each}}
+
+{{#each hash as |item|}}
+  {{{@key}}}: {{{item}}}
+{{/each}}
+
+{{#each pages as |page|}}
+# Skip anything in the hidden_pages array, but keep looping over the rest of the values
+{{#if (contains hidden_pages @page.url)}}
+    {{ continue }}
+{{/if}}
+# If it's not hidden, print it.
+* [page.title](page.url)
+{{/each}}

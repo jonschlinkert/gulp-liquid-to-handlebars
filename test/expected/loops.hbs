@@ -9,7 +9,7 @@
 {{#each pages as |page|}}
 # Skip anything in the hidden_pages array, but keep looping over the rest of the values
 {{#if (contains hidden_pages @page.url)}}
-    {{ continue }}
+    {{continue}}
 {{/if}}
 # If it's not hidden, print it.
 * [page.title](page.url)
